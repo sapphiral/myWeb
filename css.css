@@ -1,0 +1,157 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+}
+ul {
+	list-style-type: none;
+}
+header .bg {
+	background: url('./images/bg1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 279px;
+}
+
+header .bg h1 {
+	padding-top: 5px;
+	padding-left: 15px;
+	color:white;
+	font-size: 30px;
+	text-shadow: 46px 46px 0px rgba(255,255,255,0.7);
+}
+
+header {
+}
+
+
+
+header nav {
+	background: #333;
+}
+header .toggle {
+	width: 55px;
+	height: auto;
+	display: inline-block;
+}
+
+header .toggle .bar {
+	width: 35px;
+	height: 6px;
+	margin: 6px 10px;
+	background: #fff;
+	border-radius: 4px;
+}
+
+header ul {
+	margin: 0;
+	position: absolute;
+	z-index: 1;
+	height: 0%;
+	overflow:hidden;
+	transition: 0.3s;
+}
+
+header ul li {
+}
+
+header ul li a {
+	display:inline-block;
+	text-decoration: none;
+	color: #fff;
+	padding: 15px;
+	background: #333;
+	width: 200px;
+}
+
+header ul li a:hover {
+	background: #ddd;
+	color: #333;
+}
+.toggled {
+	height: 100%;
+}
+main {
+}
+i.search {
+ font-size: 16px;
+}
+footer {
+	background: #333;
+}
+
+/* DEFINES ARTICLE IN MAIN */
+
+article {
+	width:100%;
+	height: 100px;
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 42px 0;
+}
+article img {
+	width: 150px;
+	height: 100px;
+}
+
+article .context {
+	height: 100px;
+	margin-left: 10px;
+}
+ 
+article h2 {
+	font-size:16px;
+	padding:0;
+	margin: 0;
+	height: 80px;
+}
+
+article h3 {
+	margin: 0;
+	color: #aaa;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	border-top: 0.3px solid #bbb;
+	border-bottom: 0.3px solid #bbb;
+	display: block;
+	width: 150px;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (min-width:599px) {
+	#toggle {
+		display: none;
+	}
+	header ul {
+		background: #333;
+		height: auto !important;
+		width: 100%;
+		display:flex;
+		justify-content: center;
+	}
+	header ul li a {
+		text-align: center;
+		font-size: 12px;
+	}
+	main #demo {
+		text-align: center;
+		padding: 200px 0;
+	}
+	aside {
+		background: #efefef;
+	}
+	.row {
+		width: 100%;
+	}
+	.boracay {
+		background: url("images/boracay/boracay2.jpg");
+		background-size: cover;
+	}
+	.paralax {
+		height: 200px;
+	}
+	}
+}
