@@ -6,11 +6,14 @@
 .pagination {
 		display: block;
 	}
+.pagination .wrapper {
+	width: 80%;
+	margin: auto;
+	max-width: 996px;
+	position: relative;
+}
 .pagination .page {
 		display: none;
-		width: 80%;
-		max-width:  996px;
-		margin: auto;
 	}
 .pagination img {
 		width: 100%;
@@ -20,6 +23,16 @@
 .pagination > * {
 	color: white;
 	}
+.prev, .next {
+	font-size: 35px;
+	position: absolute;
+	cursor: pointer;
+	top:50%;
+	margin: 0 15px;
+}
+.next {
+	right: 0;
+ }
 .nav-button {
 		margin: auto;
 		width: auto;
@@ -34,6 +47,21 @@
 		display: inline-block;
 		margin: 0 5px;
 	}
+	
+.prev:hover, .next:hover {
+	color: #333;
+}
+
+.nav-button div:hover {
+	background: #fff;
+	box-shadow: 0 0 15px #fff;
+}
+.active {
+	background: #fff !important;
+	box-shadow: 0 0 15px #fff;
+}
+/* END PAGINATION */
+
 
 header .bg {
 	height: 527px;
@@ -94,9 +122,17 @@ footer h1 {
 	}
 .fade {
 		animation-name: fade;
-		animation-duration: 0.5s;
+		animation-duration: 1.5s;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
 	}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 @keyframes fade {
+		from {opacity: .4} 
 		to {opacity: 1}
 	}
 	

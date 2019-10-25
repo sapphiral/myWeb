@@ -1,4 +1,19 @@
+a:hover {text-decoration: none;color: #007bff}
+h1,h2,h3,h4,h5,h6 {font-family: "Sriracha", cursive}
+p {font-family: "Muli", sans-serif}
+
 /* STYLING MAIN HEADER */
+
+.intro {
+	padding-bottom: 15px;
+	
+}
+.intro h1 {
+		background: -webkit-linear-gradient(rgba(200,0,0,0.6),rgba(0,200,0,0.6),rgba(0,0,200,0.6));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
 
 header .bg {
 	width:100%;
