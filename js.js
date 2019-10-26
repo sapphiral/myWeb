@@ -52,34 +52,5 @@ function functionA(n) {
 	dot[slideIndex-1].classList.add("active");
 	console.log(slideIndex);
 };
-
-function functionD(n) {
-	
-	if (n>img.length) {slideIndex=1};
-	for (i=0; i<img.length; i++) {
-		img[i].style.display="none";
-		dot[i].classList.remove("active");
-	};
-	img[slideIndex-1].style.display="block";
-	dot[slideIndex-1].classList.add("active");
-	slideIndex++;
-	console.log(slideIndex);
-	setTimeout(functionE,2000);
-};
-
-function functionE {
-	console.log(slideIndex);
-	if (n>img.length) {slideIndex=1};
-	for (i=0; i<img.length; i++) {
-		img[i].style.display="none";
-		dot[i].classList.remove("active");
-	};
-	img[slideIndex-1].style.display="block";
-	dot[slideIndex-1].classList.add("active");
-	slideIndex++;
-	setTimeout(functionE,2000);
-
-	};
-
 functionA(1);
 /* END PAGINATION */
