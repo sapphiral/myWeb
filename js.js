@@ -52,5 +52,7 @@ function functionA(n) {
 	dot[slideIndex-1].classList.add("active");
 	console.log(slideIndex);
 };
+
+
 functionA(1);
 /* END PAGINATION */
