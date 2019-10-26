@@ -81,5 +81,5 @@ function functionE {
 
 	};
 
-functionA(alideIndex);
+functionA(1);
 /* END PAGINATION */
