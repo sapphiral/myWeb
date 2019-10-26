@@ -29,19 +29,28 @@ prev.addEventListener("click", ()=>{functionC(-1)});
 next.addEventListener("click", ()=>{functionC(1)});
 
 var slideIndex=1;
+var timeoutCollection=[];
 
-for (i=0; i<dot.length; i++) {
-	dot[i].addEventListener("click", (()=>{functionB(i+1)})());
+for (let i=0; i<dot.length; i++) {
+	dot[i].addEventListener("click", ()=>{
+		functionB(i+1);
+		});
 };
 function functionC(n) {
+	console.log("this is functionC");
 	functionA(slideIndex+=n);
 };
 
 function functionB(n) {
-	functionA(slideIndex);
+	console.log("slide running: ", n);
+	functionA(n);
 };
+
 function functionA(n) {
 	slideIndex=n;
+	console.log("hello ", slideIndex, n)
+	console.log("---");
+	
 	if (n>img.length) {slideIndex=1};
 	if (n<1) {slideIndex=img.length};
 	for (i=0; i<img.length; i++) {
@@ -50,9 +59,13 @@ function functionA(n) {
 	};
 	img[slideIndex-1].style.display="block";
 	dot[slideIndex-1].classList.add("active");
-	console.log(slideIndex);
+	clearTimeout(timeoutCollection.pop());
+	interval=setTimeout(()=>{functionC(1)},4000);
+	timeoutCollection.push(interval);
 };
 
 
+
 functionA(1);
-/* END PAGINATION */
+// /* END PAGINATION */
+// window.setTimeout(functionC(1),5000);
