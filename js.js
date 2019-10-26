@@ -79,7 +79,7 @@ function functionE {
 	slideIndex++;
 	setTimeout(functionE,2000);
 
-	}
+	};
 
 functionA(alideIndex);
 /* END PAGINATION */
