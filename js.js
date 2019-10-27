@@ -1,6 +1,5 @@
 console.log("hello world");
 const x=document.getElementById("toggle");
-// console.log(x);
 x.addEventListener("click", ()=> {
 	let x=document.getElementById("toggled");
 	x.classList.toggle("toggled");
@@ -37,19 +36,15 @@ for (let i=0; i<dot.length; i++) {
 		});
 };
 function functionC(n) {
-	console.log("this is functionC");
 	functionA(slideIndex+=n);
 };
 
 function functionB(n) {
-	console.log("slide running: ", n);
 	functionA(n);
 };
 
 function functionA(n) {
 	slideIndex=n;
-	console.log("hello ", slideIndex, n)
-	console.log("---");
 	
 	if (n>img.length) {slideIndex=1};
 	if (n<1) {slideIndex=img.length};
