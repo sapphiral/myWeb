@@ -1,193 +1,27 @@
-header .bg {
-	width:100%;
-	height:227px;
-	background: url("./images/bg1.jpg") center/cover no-repeat;
+#demo {
+	width: 100px;
 }
-.bg h1 {
-	color:white;
-	position:relative;
-	top: 2%;
-	left: 10%;
-	font-size: 6vw;
-	text-shadow: 42px 42px rgba(255,255,255,0.6);
+
+.demo1 {
+	width: 200px !important;
+}
+
+.demo2 {
+	width: 300px;
+	display: block;
 }
 
 
-/* PAGINATION */
-
-
-header nav {
-	background: #333;
-}
-.pagination {
-	display: none;
+div {
+	display: inline;
+	border: 1px solid red;
 }
 
-.toggle {
-	display: inline-block;
-	overflow:auto;
-	background: #333;
-	border-radius: 4px;
-}
 
-.toggle .bar {
-	
-	width: 35px;
-	height: 6px;
-	margin: 6px;
-	background: #fff;
-	border-radius: 4px;
-}
 
-.toggle:hover .bar {
-	background: #333;
-}
 
-.toggle:hover {
-	background: #ddd;
-}
-.toggled {
-	height: auto;
-}
-header ul {
-	list-style-type: none;
-	background: #333;
-	width:200px;
-	display:flex;
-	flex-flow: column nowrap;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	height: 0;
-	overflow: hidden;
-	z-index: 9999;
-}
-
-header ul a {
-	text-decoration: none;
-	color: white;
-	padding: 10px;
-	width:200px;
-	display:inline-block;
-}
-header ul a:hover {
-	color:#333;
-	background: #fff;
-	text-decoration: none;
-}
-
-.sticky {
-	position: fixed;
-	top:0;
-
-}
-
-header ul a:not(last-child) {
-		border-top: 0.5px solid white;
+@media only screen and (max-width: 576px) {
+	div {
+		border: 1px solid blue;
 	}
-
-
-/* STYLING MAIN CONTENT */
-
-
-/* -- MAIN ARTICLES -- */
-
-article {
-	min-height: 120px;
-	margin-bottom: 45px;
-	margin-left: 0px;
-}
-
-.img-container {
-	min-width: 210px;
-	padding: 0;
-	margin: 0 15px;
-}
-
-.img-container img {
-	width: 100%;
-	min-height: 120px;
-	min-width: 180px;
-}
-.context {
-	padding: 0;
-	}	
-
-.context h2 {
-	font-size: 3vw;
-	height: 80%;
-	
-}
-
-.context h3 {
-	font-size: 2vw;
-	position: absolute;
-	border-top: 0.1px solid black;
-	border-bottom: 0.1px solid black;
-	padding: 5px;
-	min-width: 130px;
-}
-
-.context h2, .context h3 {
-	margin: 0;
-}
-
-
-/*STYLING FOOTER */
-
-footer {
-	border-top: 1px solid black;
-	padding: 30px 0;
-}
-footer ul {
-	list-style-type: none;
-}
-
-footer ul li {
-	border-left: 1px solid black;
-	padding-left: 15px;
-	margin-left: 22px;
-}
-.copyright {
-	padding-left: 55px;
-}
-.copyright ul, .copyright p {
-	padding: 0;
-	margin: 0;
-}
-.copyright ul {
-	margin-top: 40px;
-}
-
-.copyright p {
-	font-size: 14px;
-}
-
-.copyright li {
-	margin-left: 0;
-	padding-left: 30px;
-	padding-bottom: 30px;
-}
-.contact li {
-	padding: 0 30px;
-}
-.contact a {
-	font-size: 8vw;
-}
-
-.gallery li {
-	width: 80%;
-	max-width: 420px;
-	min-width: 254px;
-	max-height: 252px;
-	min-height: 170px;
-	margin-bottom: 30px;
-	padding:15px;
-}
-
-.gallery img {
-	width: 100%;
-	height: 100%;
-	padding: 12px;
-	box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
